@@ -1,0 +1,6 @@
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\bin\Debug\ProjetoI.exe.config
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\bin\Debug\ProjetoI.exe
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\bin\Debug\ProjetoI.pdb
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\obj\Debug\ProjetoI.csprojResolveAssemblyReference.cache
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\obj\Debug\ProjetoI.exe
+c:\users\1581444\documents\visual studio 2015\Projects\Osmar1581444\ProjetoI\obj\Debug\ProjetoI.pdb
