@@ -104,6 +104,12 @@ namespace ProjetoI
         }
     }
 
+    class Classe05
+    {
+        // 1ª Questão
+        int[] numeros = new int[20];
+
+    }
 
 }
 
