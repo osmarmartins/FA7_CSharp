@@ -56,7 +56,6 @@ namespace ProjetoI
                         Classe03 c03 = new Classe03();
                         c03.questao01();
                         c03.questao02();
-            */
 
             // 1ª Aula - Exercício 04
             Console.Clear();
@@ -66,10 +65,26 @@ namespace ProjetoI
             Console.WriteLine();
 
             Classe04 c04 = new Classe04();
-//            c04.questao01();
-//            c04.questao02();
-//            c04.questao03();
+            c04.questao01();
+            c04.questao02();
+            c04.questao03();
             c04.questao04();
+*/
+
+
+            // 1ª Aula - Exercício 05
+            Console.Clear();
+            Console.WriteLine("Exercício 05");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Classe05 c05 = new Classe05();
+            //c05.questao01();
+            //c05.questao02();
+            //c05.questao03();
+            //c05.questao04();
+            c05.questao06();
 
 
         }
@@ -223,7 +238,7 @@ namespace ProjetoI
             Console.WriteLine("Variável objeto: {0}", obj);
             Console.ReadLine();
 
-            string str3 = (string) obj;
+            string str3 = (string)obj;
             Console.WriteLine("3ª Variável string: {0}", str3);
             Console.ReadLine();
 
@@ -254,7 +269,7 @@ namespace ProjetoI
 
             maiorValor = vl1;
 
-            if (vl2 > maiorValor){ maiorValor = vl2; }
+            if (vl2 > maiorValor) { maiorValor = vl2; }
             if (vl3 > maiorValor) { maiorValor = vl3; }
             if (vl4 > maiorValor) { maiorValor = vl4; }
             if (vl5 > maiorValor) { maiorValor = vl5; }
@@ -310,9 +325,10 @@ namespace ProjetoI
             int n = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Números não divisiveis por 3 e 7 entre 1 e {0}", n);
-            for(int i=1; i< n; i++)
+            for (int i = 1; i < n; i++)
             {
-                if ((i % 3 == 0)||(i % 7 == 0)){
+                if ((i % 3 == 0) || (i % 7 == 0))
+                {
                     continue;
                 }
 
@@ -341,12 +357,12 @@ namespace ProjetoI
             menor = numero;
 
             // inicia o loop a partir do 2º elemento
-            for (int i=1;i<n; i++)
+            for (int i = 1; i < n; i++)
             {
-                Console.Write("Informe o {0}º elemento da sequência: ", i+1);
+                Console.Write("Informe o {0}º elemento da sequência: ", i + 1);
                 numero = int.Parse(Console.ReadLine());
 
-                if (numero<menor)
+                if (numero < menor)
                 {
                     menor = numero;
                 }
@@ -378,7 +394,7 @@ namespace ProjetoI
             while (i < n)
             {
 
-                Console.Write("{0} ", f1+f2);
+                Console.Write("{0} ", f1 + f2);
                 soma = soma + (f1 + f2);
 
                 aux = f1;
@@ -401,9 +417,9 @@ namespace ProjetoI
 
             if (n < 20)
             {
-                for(int l=1;l< n+1; l++)
+                for (int l = 1; l < n + 1; l++)
                 {
-                    for(int c= l;c<l+n; c++)
+                    for (int c = l; c < l + n; c++)
                     {
                         Console.Write("{0} ", c);
                     }
@@ -420,8 +436,180 @@ namespace ProjetoI
     class Classe05
     {
         // 1ª Questão
-        int[] numeros = new int[20];
+        public void questao01()
+        {
+            int[] numeros = new int[20];
+            for (int i = 0; i < 20; i++)
+            {
+                numeros[i] = i * 6;
+            }
 
+            for (int i = 0; i < 20; i++)
+            {
+                Console.WriteLine("Elemento[{0}] = {1}", i, numeros[i]);
+            }
+
+            Console.ReadLine();
+
+        }
+
+        //2ª Questão
+        public void questao02()
+        {
+            int[] array = { 1, 1, 4, 5, 2, 3, 4, 5, 3, 1, 2, 3, 4, 5, 5, 5, 6, 7, 3 };
+            List<int> seq = new List<int>();
+            List<int> maiorSeq = new List<int>();
+
+            // Loop iniciando no segundo elemento do array
+            int i = 0;
+            while (i < array.Length - 1)
+            {
+                seq.Add(array[i]);
+
+                if (array[i + 1] - array[i] != 1)
+                {
+                    foreach (int s in seq)
+                    {
+                        Console.Write("{0} ", s);
+                    }
+                    Console.ReadLine();
+                    if (seq.Count > maiorSeq.Count)
+                    {
+                        maiorSeq.Clear();
+                        foreach (int l in seq)
+                        {
+                            maiorSeq.Add(l);
+                        }
+
+                    }
+
+                    // Inicializa nova lista
+                    seq = new List<int>();
+
+                }
+
+                i++;
+
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Maior sequência encontrada:");
+            foreach (int s in maiorSeq)
+            {
+                Console.Write("{0} ", s);
+            }
+            Console.ReadLine();
+        }
+
+        //3ª Questão
+        public void questao03()
+        {
+            int[] array = { 2, 4, 5, 5, 5, 7, 8, 9, 5, 2, 2, 4, 4, 5, 6, 5 };
+            int valorMaiorFrequencia = array[0];
+            int frequencia = 1;
+            int conta;
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write("{0} ", array[i]);
+
+                conta = 0;
+                for (int j = 0; j < array.Length; j++)
+                {
+
+                    if (array[j] == array[i])
+                    {
+                        conta++;
+                    }
+                }
+                if (conta > frequencia)
+                {
+                    frequencia = conta;
+                    valorMaiorFrequencia = array[i];
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Número com maior repetição: {0}", valorMaiorFrequencia);
+            Console.WriteLine("Qtd. de repetição: {0}", frequencia);
+            Console.ReadLine();
+        }
+
+        //4ª Questão
+        public void questao04()
+        {
+            char[] arrayAlfabeto = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+            string palavra = "";
+
+            Console.Write("Digite uma palavra: ");
+            palavra = Console.ReadLine();
+            palavra = palavra.ToLower();
+
+            Console.WriteLine();
+
+            for (int i = 0; i < palavra.Length; i++)
+            {
+                Console.WriteLine("letra {0} posição {1} ", palavra[i], Array.IndexOf(arrayAlfabeto, palavra[i]));
+            }
+
+            Console.ReadLine();
+        }
+
+
+        //5ª Questão
+        public void questao05()
+        {
+            int[,] matriz = new int[4,4];
+
+            for(int l = 0; l < 4; l++)
+            {
+                for(int c = 0; c < 4; c++)
+                {
+                    Console.Write("{0}  ", (5-l) * (5-c));
+                }
+
+                Console.WriteLine("");
+            }
+
+            Console.ReadLine();
+            
+        }
+
+        //6ª Questão
+        public void questao06()
+        {
+            string frase;
+            string[] palavras;
+            char[] delimitadores = new char[] { ' ', ',', '.', '!', '?' };
+            int c=0;
+            string aux;
+           
+
+            Console.Write("Digite uma frase: ");
+            frase = Console.ReadLine();
+
+            frase = "Este é o TEXTO. Texto, texto, TeXtO – ESTE TEXTO! Este é o texto?";
+            frase = frase.ToLower();
+
+            palavras = frase.Split(delimitadores);
+            Array.Sort(palavras);
+
+            aux = "";
+            c = 0;
+            foreach(string palavra in palavras)
+            {
+                if (!palavra.Equals(aux))
+                {
+                    c = 0;
+                    aux = palavra;
+                }
+
+                Console.WriteLine(palavra);
+            }
+
+            Console.ReadLine();
+
+        }
     }
 
 }
