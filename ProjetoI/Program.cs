@@ -10,52 +10,52 @@ namespace ProjetoI
     {
         static void Main(string[] args)
         {
-            /*
-                        // 1ª Aula - Exercício 00
-                        Console.WriteLine("Exercício 01");
-                        Console.WriteLine("============");
-                        Console.WriteLine();
-                        Console.WriteLine();
 
-                        Classe00 c00 = new Classe00();
-                        c00.exercicios();
+            // 1ª Aula - Exercício 00
+            Console.WriteLine("Exercício 01");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
 
-
-                        // 1ª Aula - Exercício 01
-                        Console.Clear();
-                        Console.WriteLine("Exercício 01");
-                        Console.WriteLine("============");
-                        Console.WriteLine();
-                        Console.WriteLine();
-
-                        Classe01 c01 = new Classe01();
-                        c01.questao01();
-                        c01.questao02();
-                        c01.questao03();
-                        c01.questao04();
-                        c01.questao05();
-
-                        // 1ª Aula - Exercício 02
-                        Console.Clear();
-                        Console.WriteLine("Exercício 02");
-                        Console.WriteLine("============");
-                        Console.WriteLine();
-                        Console.WriteLine();
-
-                        Classe02 c02 = new Classe02();
-                        c02.questao01();
+            Classe00 c00 = new Classe00();
+            c00.exercicios();
 
 
-                        // 1ª Aula - Exercício 03
-                        Console.Clear();
-                        Console.WriteLine("Exercício 03");
-                        Console.WriteLine("============");
-                        Console.WriteLine();
-                        Console.WriteLine();
+            // 1ª Aula - Exercício 01
+            Console.Clear();
+            Console.WriteLine("Exercício 01");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
 
-                        Classe03 c03 = new Classe03();
-                        c03.questao01();
-                        c03.questao02();
+            Classe01 c01 = new Classe01();
+            c01.questao01();
+            c01.questao02();
+            c01.questao03();
+            c01.questao04();
+            c01.questao05();
+
+            // 1ª Aula - Exercício 02
+            Console.Clear();
+            Console.WriteLine("Exercício 02");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Classe02 c02 = new Classe02();
+            c02.questao01();
+
+
+            // 1ª Aula - Exercício 03
+            Console.Clear();
+            Console.WriteLine("Exercício 03");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Classe03 c03 = new Classe03();
+            c03.questao01();
+            c03.questao02();
 
             // 1ª Aula - Exercício 04
             Console.Clear();
@@ -69,7 +69,6 @@ namespace ProjetoI
             c04.questao02();
             c04.questao03();
             c04.questao04();
-*/
 
 
             // 1ª Aula - Exercício 05
@@ -80,10 +79,11 @@ namespace ProjetoI
             Console.WriteLine();
 
             Classe05 c05 = new Classe05();
-            //c05.questao01();
-            //c05.questao02();
-            //c05.questao03();
-            //c05.questao04();
+            c05.questao01();
+            c05.questao02();
+            c05.questao03();
+            c05.questao04();
+            c05.questao05();
             c05.questao06();
 
 
@@ -95,75 +95,45 @@ namespace ProjetoI
         public void exercicios()
         {
             Console.WriteLine("1- O que é a Common Language Runtime (CLR)? Por que ela é uma parte importante do .NET Framework?");
-            Console.WriteLine("R-");
+            Console.WriteLine("R: É equivalente a JVM do Java. Isto é, responsável pela execução de assembly´s (byte codes e, java).");
+            Console.WriteLine("O CRL é a camada entre a aplicação e o sistema operacional. Daí sua importância.");
             Console.WriteLine("próxima...");
             Console.ReadLine();
 
             Console.WriteLine("2- Descreva o processo de compilação de um programa C# para um assembly e o processo de execução de um assenbly.");
-            Console.WriteLine("R-");
+            Console.WriteLine("R: Na compilação de um código fonte de uma das linguagens do .NET, por exemplo o C#, o compilador gera ");
+            Console.WriteLine("um código intermediário que será lido pelo CLR e convertido para o código nativo de máquina. ");
+            Console.WriteLine("Esse código é conhecido por assembly.");
+            Console.WriteLine("Na execução do assembly, o CLR faz uso do JIT (just in time) para otimizar o código de acordo com os recursos da máquina.");
             Console.WriteLine("próxima...");
             Console.ReadLine();
 
             Console.WriteLine("3- O que é a MSIL? Aponte algumas características chaves.");
-            Console.WriteLine("R-");
+            Console.WriteLine("R: O MSIL, Microsoft Intermediate Language, também conhecido como IL ou CIL, é uma linguagem intermediária gerada pela compilação");
+            Console.WriteLine("do código fonte da aplicação. É uma linguagem de baixo nível para a CLR.");
+            Console.WriteLine("Por meio do compilador JIT existente na CLR, o MSIL é convertido em instruções do processador utilizado na execução. ");
+            Console.WriteLine("Assim, o código faz uso dos recursos existentes para cada processador que irá executar a aplicação.");
             Console.WriteLine("próxima...");
             Console.ReadLine();
 
             Console.WriteLine("4- O que é a Common Language Specification (CLS)? Por que ela foi desenvolvida?");
-            Console.WriteLine("R-");
+            Console.WriteLine("R: É a espeficação comum de liguagem.");
+            Console.WriteLine("Como podemos desenvolver em diversas liguagens no.NET, (C#, J#, VB, Delphi, entre outras), se faz necessário uma ");
+            Console.WriteLine("especificação a ser implementada em cada liguagem e desta forma, tornar as instruções comuns ao.NET");
+            Console.WriteLine("Esta é a razão da existência da CLS.");
             Console.WriteLine("próxima...");
             Console.ReadLine();
 
             Console.WriteLine("5- O que é o Common Type System? Quando ele é utilizado?");
-            Console.WriteLine("R-");
+            Console.WriteLine("R: Da mesma forma da CLS, a CTS foi desenvolvida para definir os tipos ");
+            Console.WriteLine("de dados(int, string, float, ...) comuns as diversas linguagens existentes no.NET");
+            Console.WriteLine("Desta forma podemos, por exemplo, usar o tipo 'inteiro' nas diversas liguagens do framework");
+            Console.WriteLine("e no processo de compilação esse tipo será referênciado ao system.int");
+            Console.WriteLine("O CTS é utilizado no processo de compilação do código fonte para compatibilizar os tipos de dados.");
+
+            Console.WriteLine();
             Console.WriteLine("fim do exercício.");
             Console.ReadLine();
-
-            /*
-
-            1.O que é a Common Language Runtime (CLR) ? Por que
-            ela é uma parte importante do .NET Framework
-
-            R: É equivalente a JVM do Java.Isto é, responsável pela
-            execução de assembly´s(byte codes).
-            Esses assembly´s podem ser gerados a partir de qualquer linguagem
-            de desenvolvimento existente no.NET
-            Daí a sua importância.Sem ele não é possível a execução de aplicativos
-            no.NET
-
-
-            2.Descreva o processo de compilação de um programa C# para um assembly
-            e o processo de execução de um assembly.
-
-            R -
-
-
-            3.O que é a linguagem MSIL? Aponte algumas características chaves
-
-            R -
-
-
-            4.O que é a Cammon Language Specification (CLS).Por que ela foi
-            desenvolvida ?
-
-            R - É as espeficação comum de liguagem.
-            Como podemos desenvolver em diversas liguagens no.NET,
-            (C#, J#, VB, Delphi, entre outras) se faz necessário uma 
-            especificação a ser implementada em cada liguagem e assim, tornar
-            as instruções comuns ao.NET
-            Esta é a razão da existência da CLS.
-
-
-
-            5.O que é o Cammon Type System ?
-            Quando ele é utilizado ?
-
-            R - Da mesma forma da CLS, a CTS foi desenvolvida para definir os tipos
-            de dados(int, string, float, ...) comuns as diversas linguagens existentes
-            no.NET
-            Desta forma podemos usar o tipo "inteiro" nas diversas liguagens por meio
-            da referência system.int
-            */
 
         }
     }
@@ -182,8 +152,9 @@ namespace ProjetoI
         //2 - Modifique a aplicação para imprimir na tela o seu nome.
         public void questao02()
         {
+            Console.WriteLine();
             Console.WriteLine("Questão 2 - Modifique a aplicação para imprimir na tela o seu nome.");
-            Console.WriteLine("Osmar de Oliveira Martins Filho (Mat.: 1581444");
+            Console.WriteLine("Osmar de Oliveira Martins Filho (Mat.: 1581444)");
             Console.ReadLine();
         }
 
@@ -191,6 +162,7 @@ namespace ProjetoI
         //3 - Escreva um programa para imprimir na tela os números 1, 101 e 1001.
         public void questao03()
         {
+            Console.WriteLine();
             Console.WriteLine("Questão 3 - Escreva um programa para imprimir na tela os números 1, 101 e 1001.");
             Console.WriteLine("1º Número: {0}", 1);
             Console.WriteLine("2º Número: {0}", 101);
@@ -203,6 +175,7 @@ namespace ProjetoI
         //4 - Crie uma aplicação console que imprime na tela a data e hora atual.
         public void questao04()
         {
+            Console.WriteLine();
             Console.WriteLine("Questão 4 - Crie uma aplicação console que imprime na tela a data e hora atual.");
             Console.WriteLine("Data e Hora atual: {0}", DateTime.Now);
             Console.ReadLine();
@@ -212,6 +185,7 @@ namespace ProjetoI
         //5 - Crie uma aplicação console que calcula e imprime na tela o quadrado do número 12345, bem como sua raíz quadrada.
         public void questao05()
         {
+            Console.WriteLine();
             Console.WriteLine("Questão 5 - Crie uma aplicação console que calcula e imprime na tela o quadrado do número 12345, bem como sua raíz quadrada.");
             Console.WriteLine("Quadrado de 12345: {0}", Math.Pow(12345, 2));
             Console.WriteLine("Raiz Quadrada de 12345: {0}", Math.Sqrt(12345));
@@ -226,6 +200,14 @@ namespace ProjetoI
     {
         public void questao01()
         {
+            Console.WriteLine("Questão 1: ");
+            Console.WriteLine("Declare duas variáveis string e atribua a elas os valores 'Hello' e 'World'. ");
+            Console.WriteLine("Declare uma variável do tipo object e atribua a ela a concatenação das duas primeiras variáveis (adicione um espaço entre ambas). ");
+            Console.WriteLine("Declare uma terceira variável string e a inicialize com o valor da variável do tipo object criada anteriormente (será preciso fazer um type casting).");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
             string str1 = "Hello";
             Console.WriteLine("1ª Variável string: {0}", str1);
             Console.ReadLine();
@@ -235,7 +217,7 @@ namespace ProjetoI
             Console.ReadLine();
 
             object obj = str1 + " " + str2;
-            Console.WriteLine("Variável objeto: {0}", obj);
+            Console.WriteLine("Objeto: {0}", obj);
             Console.ReadLine();
 
             string str3 = (string)obj;
@@ -254,6 +236,10 @@ namespace ProjetoI
         // 1ª Questão
         public void questao01()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 1: Escreva um programa que encontra o maior valor entre 5 variáveis dadas.");
+            Console.WriteLine();
+
             int maiorValor;
             int vl1 = 2;
             int vl2 = 6;
@@ -282,6 +268,17 @@ namespace ProjetoI
         // 2ª Questão 
         public void questao02()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 2:");
+            Console.WriteLine("Escreva um programa que aplica um fator de bônus para um dado escore no intervalo [1..9]. ");
+            Console.WriteLine("O programa deve ler o escore como um dígito na entrada. ");
+            Console.WriteLine("Se o dígito está entre 1 e 3, o programa deve multiplicá-lo por 10; ");
+            Console.WriteLine("se estiver entre 4 e 6, multiplica por 100; ");
+            Console.WriteLine("se tiver entre 7 e 9, multiplica por 1000. ");
+            Console.WriteLine("Se a entrada for zero ou outro valor não numérico o programa deve relatar um erro.");
+            Console.WriteLine("Use a instrução switch e imprima o novo valor calculado no console.");
+            Console.WriteLine();
+
             Console.Write("Entre com o escore no intervalo [1..9]: ");
             int escore = int.Parse(Console.ReadLine());
 
@@ -321,6 +318,9 @@ namespace ProjetoI
         // 1ª Questão
         public void questao01()
         {
+            Console.WriteLine("Questão 1: Escreva um programa que imprima todos os números de 1 até N que não sejam divisíveis por 3 e por 7 ao mesmo tempo.");
+            Console.WriteLine();
+
             Console.Write("Informe um número: ");
             int n = int.Parse(Console.ReadLine());
 
@@ -341,6 +341,10 @@ namespace ProjetoI
 
         public void questao02()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 2: Escreva um programa que leia do console uma sequência de N números inteiros e retorne o maior e o menor deles. ");
+            Console.WriteLine();
+
             Console.Write("Informe a qtd de números na sequência: ");
             int n = int.Parse(Console.ReadLine());
 
@@ -380,6 +384,12 @@ namespace ProjetoI
 
         public void questao03()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 3: ");
+            Console.WriteLine("Escreva um programa que receba N e calcule a soma dos N primeiros termos da sequência de Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, …");
+            Console.WriteLine("Cada membro da sequência de Fibonacci(exceto os dois primeiros) é a soma dos dois membros anteriores.");
+            Console.WriteLine();
+
             Console.Write("Informe a qtd de termos da sequência de fibonacci:");
             int n = int.Parse(Console.ReadLine());
 
@@ -412,6 +422,11 @@ namespace ProjetoI
 
         public void questao04()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 4: ");
+            Console.WriteLine("Escreva um programa que leia do console um número inteiro positivo N (N < 20) e escreva no console a matriz correspondente, tal como exemplificado:");
+            Console.WriteLine();
+
             Console.Write("Informe um valor menor que 20: ");
             int n = int.Parse(Console.ReadLine());
 
@@ -438,6 +453,10 @@ namespace ProjetoI
         // 1ª Questão
         public void questao01()
         {
+            Console.WriteLine("Questão 1: ");
+            Console.WriteLine("Escreva um programa que declara um array de 20 inteiros e inicializa cada elemento pelo seu índice multiplicado por 6. Imprima o array obitido no console.");
+            Console.WriteLine();
+
             int[] numeros = new int[20];
             for (int i = 0; i < 20; i++)
             {
@@ -456,9 +475,17 @@ namespace ProjetoI
         //2ª Questão
         public void questao02()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 2: ");
+            Console.WriteLine("Escreva um programa que encontra a maior sequência incremental dentro de um array. Exemplo:{3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.");
+            Console.WriteLine();
+
             int[] array = { 1, 1, 4, 5, 2, 3, 4, 5, 3, 1, 2, 3, 4, 5, 5, 5, 6, 7, 3 };
             List<int> seq = new List<int>();
             List<int> maiorSeq = new List<int>();
+
+            Console.WriteLine("Array:  { 1, 1, 4, 5, 2, 3, 4, 5, 3, 1, 2, 3, 4, 5, 5, 5, 6, 7, 3 }");
+
 
             // Loop iniciando no segundo elemento do array
             int i = 0;
@@ -466,13 +493,9 @@ namespace ProjetoI
             {
                 seq.Add(array[i]);
 
+                // Caso a subtração do valor atual com o seu sucessor seja diferente de "1", então há quebra de sequência.
                 if (array[i + 1] - array[i] != 1)
                 {
-                    foreach (int s in seq)
-                    {
-                        Console.Write("{0} ", s);
-                    }
-                    Console.ReadLine();
                     if (seq.Count > maiorSeq.Count)
                     {
                         maiorSeq.Clear();
@@ -504,14 +527,22 @@ namespace ProjetoI
         //3ª Questão
         public void questao03()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 3: ");
+            Console.WriteLine("Escreva um programa que encontra o número mais frequente dentro de um array. Examplo: ");
+            Console.WriteLine(" { 4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} -> 4(5 times).");
+            Console.WriteLine();
+
             int[] array = { 2, 4, 5, 5, 5, 7, 8, 9, 5, 2, 2, 4, 4, 5, 6, 5 };
             int valorMaiorFrequencia = array[0];
             int frequencia = 1;
             int conta;
+
+            Console.WriteLine("Array: { 2, 4, 5, 5, 5, 7, 8, 9, 5, 2, 2, 4, 4, 5, 6, 5 }");
+
+
             for (int i = 0; i < array.Length; i++)
             {
-                Console.Write("{0} ", array[i]);
-
                 conta = 0;
                 for (int j = 0; j < array.Length; j++)
                 {
@@ -538,6 +569,11 @@ namespace ProjetoI
         //4ª Questão
         public void questao04()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 4: ");
+            Console.WriteLine("Escreva um programa que cria um array contendo todas as letras do alfabeto (A-Z). Leia uma palavra do console e imprima o índice de cada letra que a compõe. ");
+            Console.WriteLine();
+
             char[] arrayAlfabeto = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
             string palavra = "";
 
@@ -559,59 +595,189 @@ namespace ProjetoI
         //5ª Questão
         public void questao05()
         {
-            int[,] matriz = new int[4,4];
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Questão 5: ");
+            Console.WriteLine("Escreva um programa que preencha uma matriz de tamanho (N, N) conforme exemplos (for N=4): ");
+            Console.WriteLine();
 
-            for(int l = 0; l < 4; l++)
+            // Preenchendo na declaração da matriz
+            int[,] matrizA = {  {16, 15, 13, 10},
+                                {14, 12, 9,   6 },
+                                {11,  8, 5,   3 },
+                                {7,   4, 2,   1} };
+
+            // Preenchendo celula a celula
+            int[,] matrizB = new int[4, 4];
+            matrizB[0, 0] = 7;
+            matrizB[1, 0] = 4;
+            matrizB[2, 0] = 2;
+            matrizB[3, 0] = 1;
+
+            matrizB[0, 1] = 11;
+            matrizB[1, 1] = 8;
+            matrizB[2, 1] = 5;
+            matrizB[3, 1] = 3;
+
+            matrizB[0, 2] = 14;
+            matrizB[1, 2] = 12;
+            matrizB[2, 2] = 9;
+            matrizB[3, 2] = 6;
+
+            matrizB[0, 3] = 16;
+            matrizB[1, 3] = 15;
+            matrizB[2, 3] = 13;
+            matrizB[3, 3] = 10;
+
+            int[,] matrizC = {  { 1, 12, 11, 10},
+                                { 2, 13, 16,  9 },
+                                { 3, 14, 15,  8 },
+                                { 4,  5, 6,   7} };
+
+
+            for (int l = 0; l < 4; l++)
             {
-                for(int c = 0; c < 4; c++)
+                for (int c = 0; c < 4; c++)
                 {
-                    Console.Write("{0}  ", (5-l) * (5-c));
+                    Console.Write("{0}  ", matrizA[l, c]);
                 }
 
                 Console.WriteLine("");
             }
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            for (int l = 0; l < 4; l++)
+            {
+                for (int c = 0; c < 4; c++)
+                {
+                    Console.Write("{0}  ", matrizB[l, c]);
+                }
+
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            for (int l = 0; l < 4; l++)
+            {
+                for (int c = 0; c < 4; c++)
+                {
+                    Console.Write("{0}  ", matrizB[l, c]);
+                }
+
+                Console.WriteLine("");
+            }
+
+
             Console.ReadLine();
-            
+
         }
 
         //6ª Questão
         public void questao06()
         {
+            Console.WriteLine();
+            Console.WriteLine("Questão 6: ");
+            Console.WriteLine("Escreva um programa que conta quantas vezes uma palavras aparece em uma frase recebido no console. ");
+            Console.WriteLine("Não deve ser feita distinção entre maiúsculas e minúsculas. ");
+            Console.WriteLine("O resultado deve ser ordenado pelo número de incidências da palavra. ");
+            Console.WriteLine();
+
             string frase;
             string[] palavras;
-            char[] delimitadores = new char[] { ' ', ',', '.', '!', '?' };
-            int c=0;
+            char[] delimitadores = new char[] { ' ', ',', '.', '!', '?', };
+
+            // Lista para a quebra da frase em palavras e a quantidade de repetição
+            List<string> palavra = new List<string>();
+            List<int> repeticao = new List<int>();
+
+            // Lista para o resultado final
+            List<string> palavraFinal = new List<string>();
+            List<int> repeticaoFinal = new List<int>();
+
+            int menor;
+            int indiceMenor;
+            int i;
+
+
+
+            // Variáveis auxiliares para contar as palavras
+            int c = 0;
             string aux;
-           
 
             Console.Write("Digite uma frase: ");
             frase = Console.ReadLine();
-
-            frase = "Este é o TEXTO. Texto, texto, TeXtO – ESTE TEXTO! Este é o texto?";
             frase = frase.ToLower();
 
             palavras = frase.Split(delimitadores);
             Array.Sort(palavras);
 
-            aux = "";
             c = 0;
-            foreach(string palavra in palavras)
+            aux = "";
+
+            foreach (string p in palavras)
             {
-                if (!palavra.Equals(aux))
+
+                if (!p.Equals(aux))
                 {
+                    palavra.Add(aux);
+                    repeticao.Add(c);
                     c = 0;
-                    aux = palavra;
+                    aux = p;
+                }
+                c++;
+            }
+
+            // Última palavra (adiciona fora do laço)
+            palavra.Add(aux);
+            repeticao.Add(c);
+
+
+            // Ordenação
+            while (palavra.Count > 0)
+            {
+                i = 0;
+                indiceMenor = 0;
+                menor = repeticao.ElementAt(i);
+                while (i < palavra.Count)
+                {
+                    if (repeticao.ElementAt(i) < menor)
+                    {
+                        menor = repeticao.ElementAt(i);
+                        indiceMenor = i;
+                    }
+
+                    i++;
                 }
 
-                Console.WriteLine(palavra);
+                palavraFinal.Add(palavra.ElementAt(indiceMenor));
+                repeticaoFinal.Add(repeticao.ElementAt(indiceMenor));
+
+                palavra.RemoveAt(indiceMenor);
+                repeticao.RemoveAt(indiceMenor);
+            }
+
+
+
+            // Exibe lista resultante 
+            Console.WriteLine();
+            for (int x = 0; x < palavraFinal.Count; x++)
+            {
+                // Retira da lista o delimitador " "
+                if (palavraFinal.ElementAt(x).Equals(""))
+                {
+                    continue;
+                }
+                Console.WriteLine("{0} --> {1}", palavraFinal.ElementAt(x), repeticaoFinal.ElementAt(x));
             }
 
             Console.ReadLine();
 
         }
     }
-
 }
-
-
