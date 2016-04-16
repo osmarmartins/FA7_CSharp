@@ -1,0 +1,6 @@
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\bin\Debug\ProjetoII.exe.config
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\bin\Debug\ProjetoII.exe
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\bin\Debug\ProjetoII.pdb
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.csprojResolveAssemblyReference.cache
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.exe
+C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.pdb
