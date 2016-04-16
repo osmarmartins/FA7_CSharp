@@ -24,11 +24,14 @@ namespace ProjetoII
         }
     }
 
+
+    //Exercicios 06
     class Classe06
     {
         public void questao01()
         {
             int numero;
+            
             try
             {
                 Console.Write("Informe um número: ");
@@ -95,5 +98,12 @@ namespace ProjetoII
                 Console.ReadLine();
             }
         }
+    }
+
+
+    //Exercício 07
+    class Classe07
+    {
+
     }
 }
