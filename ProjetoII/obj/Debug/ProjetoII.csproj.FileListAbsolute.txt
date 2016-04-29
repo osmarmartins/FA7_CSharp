@@ -4,3 +4,9 @@ C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\bi
 C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.csprojResolveAssemblyReference.cache
 C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.exe
 C:\Users\1581444\Documents\Visual Studio 2015\Projects\Osmar1581444\ProjetoII\obj\Debug\ProjetoII.pdb
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\bin\Debug\ProjetoII.exe.config
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\obj\Debug\ProjetoII.exe
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\obj\Debug\ProjetoII.pdb
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\bin\Debug\ProjetoII.exe
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\bin\Debug\ProjetoII.pdb
+D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoII\obj\Debug\ProjetoII.csprojResolveAssemblyReference.cache
