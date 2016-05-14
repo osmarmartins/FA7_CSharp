@@ -11,18 +11,18 @@ namespace ProjetoII
     {
         static void Main(string[] args)
         {
-/*
-            // 2ª Aula - Exercício 06
-            Console.Clear();
-            Console.WriteLine("Exercício 06");
-            Console.WriteLine("============");
-            Console.WriteLine();
-            Console.WriteLine();
+            /*
+                        // 2ª Aula - Exercício 06
+                        Console.Clear();
+                        Console.WriteLine("Exercício 06");
+                        Console.WriteLine("============");
+                        Console.WriteLine();
+                        Console.WriteLine();
 
-            Classe06 c06 = new Classe06();
-            c06.Questao01();
-            c06.Questao02();
-*/
+                        Classe06 c06 = new Classe06();
+                        c06.Questao01();
+                        c06.Questao02();
+       
 
             // 2ª Aula - Exercício 07
             Console.Clear();
@@ -34,6 +34,16 @@ namespace ProjetoII
             Classe07 c07 = new Classe07();
             c07.Questao01();
             c07.Questao02();
+*/
+            Console.Clear();
+            Console.WriteLine("Exercício 08");
+            Console.WriteLine("============");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Classe08 c08 = new Classe08();
+            c08.Questao02();
+            
 
 
         }
@@ -118,6 +128,7 @@ namespace ProjetoII
 
 
 
+
     //Exercício 07
 
     // Classe IEnumerable a ser usada na 2ª questão
@@ -175,7 +186,7 @@ namespace ProjetoII
         public static int Produto(this ListaValores valores)
         {
             int produto = 1;
-            foreach(int valor in valores)
+            foreach (int valor in valores)
             {
                 produto *= valor;
             }
@@ -188,7 +199,7 @@ namespace ProjetoII
         {
             int maior = valores.First();
 
-            foreach(int valor in valores)
+            foreach (int valor in valores)
             {
                 if (valor > maior)
                 {
@@ -202,7 +213,7 @@ namespace ProjetoII
         public static int Minimo(this ListaValores valores)
         {
             int menor = valores.First();
-            foreach(int valor in valores)
+            foreach (int valor in valores)
             {
                 if (valor < menor)
                 {
@@ -215,7 +226,7 @@ namespace ProjetoII
 
         public static float Media(this ListaValores valores)
         {
-            float media = (float)valores.Soma()/valores.Count();
+            float media = (float)valores.Soma() / valores.Count();
             return media;
         }
     }
@@ -250,7 +261,7 @@ namespace ProjetoII
             valores.Add(3);
 
             Console.WriteLine("Valores");
-            foreach(var valor in valores)
+            foreach (var valor in valores)
             {
                 Console.WriteLine(valor);
             }
@@ -281,8 +292,183 @@ namespace ProjetoII
             }
             Console.ReadLine();
 
-            
+
 
         }
     }
+
+
+
+
+
+    // Exercício 08 -  Questão 01
+    
+    // Classe escola
+    public class Pessoa
+    {
+        private string nome;
+
+        public Pessoa(string nome)
+        {
+            this.nome = nome;
+        }
+    }
+
+    public class Escola
+    {
+        private List<Classe> classes;
+
+        public Escola(List<Classe> classes)
+        {
+            this.classes = classes;
+        }
+    }
+
+    public class Classe
+    {
+        private string idClasse;
+        private List<Professor> professores;
+
+        public Classe(string idClasse, List<Professor> professores)
+        {
+            this.idClasse = idClasse;
+            this.professores = professores;
+        }
+    }
+
+    public class Estudante : Pessoa
+    {
+        private int idEstudante;
+
+        public Estudante(int idEstudante, string nome):base(nome)
+        {
+            this.idEstudante = idEstudante;
+        }
+
+    }
+
+    public class Professor : Pessoa
+    {
+        private List<Disciplina> disciplinas;
+
+        public Professor(string nome, List<Disciplina> disciplinas  ):base(nome)
+        {
+            this.disciplinas = disciplinas;
+        }
+    }
+
+    public class Disciplina
+    {
+        private string nome;
+        private int numeroAulas;
+        private int exercicios;
+
+        public Disciplina(string nome, int numeroAulas, int exercicios)
+        {
+            this.nome = nome;
+            this.numeroAulas = numeroAulas;
+            this.exercicios = exercicios;
+        }
+    }
+
+    // Exercício 08 -  Questão 02
+    public abstract class Shape
+    {
+        private int witdh;
+        private int height;
+
+        public int Witdh { get; set; }
+        public int Height { get; set; }
+
+       public Shape(int width, int heigth)
+        {
+            this.witdh = width;
+            this.height = heigth;
+        }
+
+        public abstract float CalculateSurface();
+
+    }
+
+    public class Triangle : Shape
+    {
+        public Triangle(int width, int heigth) : base(width, heigth)
+        {
+            this.Witdh = width;
+            this.Height = heigth;
+        }
+
+        public override float CalculateSurface()
+        {
+            return this.Witdh * this.Height/2;
+        }
+    }
+
+    public class Retangle : Shape
+    {
+        public Retangle(int width, int heigth) : base(width, heigth)
+        {
+            this.Witdh = width;
+            this.Height = heigth;
+        }
+
+        public override float CalculateSurface()
+        {
+            return this.Witdh * this.Height;
+        }
+    }
+
+    public class Circle : Shape
+    {
+        public Circle(int width, int heigth) : base(width, heigth)
+        {
+            this.Height = width;
+            this.Witdh = width;
+        }
+
+        public override float CalculateSurface()
+        {
+            return (float)3.14 * this.Height * this.Height;
+        }
+    }
+
+    class Classe08
+    {
+        public void Questao02()
+        {
+            var shapes = new[] {
+                new { width=2, height=3 },
+                new { width=5, height=13 },
+                new { width=20, height=5 },
+                new { width=10, height=7 }
+            };
+
+            Triangle triangle;
+            Retangle retangle;
+            Circle circle;
+
+
+            foreach (var shape in shapes)
+            {
+                triangle = new Triangle(shape.width, shape.height);
+                retangle = new Retangle(shape.width, shape.height);
+                circle = new Circle(shape.width, shape.height);
+                    
+                Console.WriteLine("Largura: {0}, Altura: {1}", shape.width, shape.height);
+                Console.WriteLine("Área Retângulo: {0}", retangle.CalculateSurface());
+                Console.WriteLine("Área Triângulo: {0}", triangle.CalculateSurface());
+
+                Console.WriteLine("Raio: {0}", shape.width);
+                Console.WriteLine("Área Circunferência: {0}", circle.CalculateSurface());
+                Console.WriteLine("");
+
+            }
+
+            Console.ReadLine();
+                
+        }
+    }
+
+
+
 }

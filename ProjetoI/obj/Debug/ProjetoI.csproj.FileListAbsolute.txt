@@ -10,3 +10,9 @@ D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoI\ob
 D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoI\bin\Debug\ProjetoI.exe
 D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoI\bin\Debug\ProjetoI.pdb
 D:\FA7\Programação para Plataforma Proprietária I (C#)\FA7_CSharp\ProjetoI\obj\Debug\ProjetoI.csprojResolveAssemblyReference.cache
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\bin\Debug\ProjetoI.exe.config
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\obj\Debug\ProjetoI.exe
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\obj\Debug\ProjetoI.pdb
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\bin\Debug\ProjetoI.exe
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\bin\Debug\ProjetoI.pdb
+D:\FA7\PPP-I (C#)\FA7_CSharp\ProjetoI\obj\Debug\ProjetoI.csprojResolveAssemblyReference.cache
