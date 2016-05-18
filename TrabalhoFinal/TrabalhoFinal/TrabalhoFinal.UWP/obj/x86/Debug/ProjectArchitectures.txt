@@ -1,0 +1,2 @@
+D:\FA7\PPP-I (C#)\TrabalhoFinal\TrabalhoFinal\TrabalhoFinal.UWP\TrabalhoFinal.UWP.csproj;x86
+D:\FA7\PPP-I (C#)\TrabalhoFinal\TrabalhoFinal\TrabalhoFinal\TrabalhoFinal.csproj;neutral
